@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaizen RP — Le premier serveur One Piece RolePlay sur FiveM</title>
+  <meta name="description" content="Kaizen RP : le premier serveur One Piece RolePlay sur FiveM. Pirates, Marine, Révolutionnaires, Fruits du Démon, Haki et primes — prends la mer et écris ta légende.">
+  <meta name="theme-color" content="#0b1d33">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kaizen RP — One Piece RolePlay sur FiveM">
+  <meta property="og:description" content="Pirate, Marine ou Révolutionnaire ? Prends la mer sur le premier serveur One Piece RP de FiveM.">
+  <meta property="og:image" content="assets/img/logo.svg">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pirata+One&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js')</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="Kaizen RP — accueil">
+        <img src="assets/img/logo.svg" alt="" width="44" height="44">
+        <span>Kaizen<small>RP</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#monde">Le Monde</a></li>
+        <li><a href="#factions">Factions</a></li>
+        <li><a href="#pouvoirs">Pouvoirs</a></li>
+        <li><a href="#carte">Carte</a></li>
+        <li><a href="#primes">Primes</a></li>
+        <li><a href="#reglement">Règlement</a></li>
+        <li><a class="btn btn-gold btn-sm" href="#rejoindre" data-magnetic>Embarquer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="sky" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="cloud c3"></div>
+        <div class="gull g1"></div>
+        <div class="gull g2"></div>
+      </div>
+
+      <div class="hero-content container">
+        <p class="eyebrow" data-reveal>⚓ Serveur FiveM · Whitelist ouverte</p>
+        <h1 id="hero-title" class="hero-title" data-reveal>
+          <span class="hero-kanji" aria-hidden="true">改善</span>
+          <span class="hero-name">Kaizen</span>
+          <span class="hero-sub">Le premier serveur <strong>One Piece RolePlay</strong> sur FiveM</span>
+        </h1>
+
+        <figure class="quote-box" data-reveal title="Clique pour une autre réplique">
+          <blockquote id="quote-text">« Je serai le Roi des Pirates ! »</blockquote>
+          <figcaption id="quote-author">— Monkey D. Luffy</figcaption>
+        </figure>
+
+        <div class="hero-cta" data-reveal>
+          <a class="btn btn-gold" href="#rejoindre" data-magnetic data-don>Prendre la mer</a>
+          <a class="btn btn-ghost" href="#" data-discord data-magnetic>
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M20.3 4.4A19.7 19.7 0 0 0 15.4 3l-.6 1.3a18.3 18.3 0 0 0-5.6 0L8.6 3a19.6 19.6 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18.1A19.9 19.9 0 0 0 6.2 21l1.3-2.1c-.7-.3-1.4-.6-2-1l.5-.4a14 14 0 0 0 12 0l.5.4c-.6.4-1.3.7-2 1L17.8 21a19.8 19.8 0 0 0 6.1-3c.5-5.2-.8-9.7-3.6-13.6ZM8 15.4c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.6 8 10.6s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z"/></svg>
+            Discord
+          </a>
+        </div>
+
+        <p class="server-status" data-reveal>
+          <span class="dot" aria-hidden="true"></span>
+          <span id="status-text">Serveur en ligne · <b id="players">--</b> pirates en mer</span>
+        </p>
+      </div>
+
+      <!-- Navire original (SVG) -->
+      <svg class="ship" viewBox="0 0 320 260" aria-hidden="true">
+        <g class="ship-sails">
+          <line x1="160" y1="20" x2="160" y2="190" stroke="#5b3a1e" stroke-width="8"/>
+          <line x1="95" y1="200" x2="95" y2="80" stroke="#5b3a1e" stroke-width="6"/>
+          <path d="M100 40 Q160 30 220 40 Q232 95 220 150 Q160 140 100 150 Q90 95 100 40Z" fill="#f3e3c3" stroke="#0b1d33" stroke-width="4"/>
+          <path d="M60 95 Q95 88 130 95 Q138 130 130 165 Q95 160 60 165 Q54 130 60 95Z" fill="#f3e3c3" stroke="#0b1d33" stroke-width="4"/>
+          <g transform="translate(130 58) scale(.3)"><circle cx="100" cy="100" r="58" fill="#0b1d33"/><ellipse cx="80" cy="100" rx="13" ry="15" fill="#f3e3c3"/><ellipse cx="120" cy="100" rx="13" ry="15" fill="#f3e3c3"/><path d="M48 80c10-28 94-28 104 0z" fill="#c8102e"/></g>
+          <path class="flag" d="M160 20 L200 8 L196 26 L160 32Z" fill="#c8102e" stroke="#0b1d33" stroke-width="3"/>
+        </g>
+        <path d="M20 185 L300 185 Q290 240 240 245 L80 245 Q30 240 20 185Z" fill="#8a5a2b" stroke="#0b1d33" stroke-width="5"/>
+        <path d="M20 185 L300 185 L296 200 L24 200Z" fill="#f2b33d" stroke="#0b1d33" stroke-width="4"/>
+        <circle cx="90" cy="220" r="7" fill="#0b1d33"/><circle cx="160" cy="222" r="7" fill="#0b1d33"/><circle cx="230" cy="220" r="7" fill="#0b1d33"/>
+        <path d="M300 185 Q320 170 312 150 Q300 158 296 175Z" fill="#f2b33d" stroke="#0b1d33" stroke-width="4"/>
+      </svg>
+
+      <div class="waves" aria-hidden="true">
+        <svg class="wave w1" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 Q180 10 360 60 T720 60 T1080 60 T1440 60 V120 H0Z"/></svg>
+        <svg class="wave w2" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 70 Q180 30 360 70 T720 70 T1080 70 T1440 70 V120 H0Z"/></svg>
+        <svg class="wave w3" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 80 Q180 50 360 80 T720 80 T1080 80 T1440 80 V120 H0Z"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ BANDEAU MANGA ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>DON !</span><span>ドン</span><span>Gomu Gomu…</span><span>BOOM !</span><span>ゴゴゴ</span><span>Haki des Rois</span><span>DON !</span><span>Gear</span><span>Berry ฿</span><span>ドドド</span>
+        <span>DON !</span><span>ドン</span><span>Gomu Gomu…</span><span>BOOM !</span><span>ゴゴゴ</span><span>Haki des Rois</span><span>DON !</span><span>Gear</span><span>Berry ฿</span><span>ドドド</span>
+      </div>
+    </div>
+
+    <!-- ============ LE MONDE ============ -->
+    <section class="section parchment" id="monde" aria-labelledby="monde-title">
+      <div class="container split">
+        <div>
+          <p class="kicker" data-reveal>Chapitre 1 · La Grande Ère de la Piraterie</p>
+          <h2 id="monde-title" class="title" data-reveal>Richesse, renommée, pouvoir…<br><em>le monde entier t'attend.</em></h2>
+          <div class="prose" data-reveal>
+            <p>Sur <strong>Kaizen</strong>, tu n'es pas spectateur de l'aventure : tu l'écris. Forme ton équipage, hisse ton pavillon, affronte les tempêtes de Grand Line ou rejoins la Marine pour faire régner la justice sur les mers.</p>
+            <p>Chaque île possède son économie, ses intrigues et ses secrets. Chaque action fait grimper ta prime… ou ton grade. Les Fruits du Démon sont rares, le Haki se mérite, et la légende du One Piece n'attend que toi.</p>
+          </div>
+          <ul class="features" data-reveal-group>
+            <li data-reveal><span class="ico" aria-hidden="true">🏴‍☠️</span><div><b>Équipages & pavillons</b>Crée ton équipage, ton Jolly Roger et ton navire.</div></li>
+            <li data-reveal><span class="ico" aria-hidden="true">🍈</span><div><b>Fruits du Démon uniques</b>Un seul exemplaire de chaque fruit sur tout le serveur.</div></li>
+            <li data-reveal><span class="ico" aria-hidden="true">💰</span><div><b>Système de primes dynamique</b>Tes actes RP font évoluer ton avis de recherche.</div></li>
+            <li data-reveal><span class="ico" aria-hidden="true">⚔️</span><div><b>Combats scénarisés</b>Haki, styles de combat et duels encadrés par le staff.</div></li>
+          </ul>
+        </div>
+
+        <div class="stats" data-reveal-group>
+          <div class="stat" data-reveal><b data-count="12">0</b><span>Îles explorables</span></div>
+          <div class="stat" data-reveal><b data-count="48">0</b><span>Fruits du Démon</span></div>
+          <div class="stat" data-reveal><b data-count="4">0</b><span>Factions jouables</span></div>
+          <div class="stat" data-reveal><b data-count="128">0</b><span>Places en mer</span></div>
+          <div class="logpose" aria-hidden="true">
+            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" fill="#f3e3c3" stroke="#0b1d33" stroke-width="5"/><circle cx="60" cy="60" r="44" fill="none" stroke="#0b1d33" stroke-width="2" stroke-dasharray="3 6"/><g class="needle"><path d="M60 18 L68 60 L60 102 L52 60Z" fill="#c8102e" stroke="#0b1d33" stroke-width="3"/><path d="M60 60 L68 60 L60 102 L52 60Z" fill="#0b1d33"/></g><circle cx="60" cy="60" r="6" fill="#f2b33d" stroke="#0b1d33" stroke-width="3"/></svg>
+            <span>Log Pose</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FACTIONS ============ -->
+    <section class="section ocean" id="factions" aria-labelledby="factions-title">
+      <div class="container">
+        <p class="kicker light" data-reveal>Chapitre 2 · Choisis ton camp</p>
+        <h2 id="factions-title" class="title light" data-reveal>Quatre voies, <em>une seule mer.</em></h2>
+
+        <div class="factions" data-reveal-group>
+          <article class="faction" style="--c:#c8102e" data-reveal data-tilt>
+            <div class="faction-emblem" aria-hidden="true">
+              <svg viewBox="0 0 100 100"><circle cx="50" cy="44" r="26" fill="#f3e3c3" stroke="#0b1d33" stroke-width="4"/><ellipse cx="41" cy="44" rx="6" ry="7" fill="#0b1d33"/><ellipse cx="59" cy="44" rx="6" ry="7" fill="#0b1d33"/><path d="M20 82 L80 22 M80 82 L20 22" stroke="#f3e3c3" stroke-width="7" stroke-linecap="round"/><path d="M24 34 Q50 4 76 34 Q50 26 24 34Z" fill="#f2b33d" stroke="#0b1d33" stroke-width="3"/></svg>
+            </div>
+            <h3>Pirates</h3>
+            <p class="faction-quote">« Je ne veux conquérir personne. L'homme le plus libre des mers, c'est le Roi des Pirates ! »</p>
+            <p>Forme ton équipage, pille, explore et fais grimper ta prime jusqu'à devenir un Empereur des mers.</p>
+            <ul><li>Création d'équipage & navire</li><li>Primes évolutives</li><li>Chasse aux trésors</li></ul>
+          </article>
+
+          <article class="faction" style="--c:#2b7de9" data-reveal data-tilt>
+            <div class="faction-emblem" aria-hidden="true">
+              <svg viewBox="0 0 100 100"><path d="M50 8 L88 24 V52 Q88 80 50 94 Q12 80 12 52 V24Z" fill="#f3e3c3" stroke="#0b1d33" stroke-width="4"/><path d="M50 26 Q66 36 50 70 Q34 36 50 26Z" fill="#2b7de9" stroke="#0b1d33" stroke-width="3"/><path d="M30 46 Q50 60 70 46" stroke="#0b1d33" stroke-width="4" fill="none"/></svg>
+            </div>
+            <h3>Marine</h3>
+            <p class="faction-quote">« La justice l'emportera ! »</p>
+            <p>Grimpe les échelons de la Marine, du simple matelot à l'Amiral. Traque, arrête et protège les civils.</p>
+            <ul><li>Grades & promotions</li><li>Missions de traque</li><li>Base de Marineford</li></ul>
+          </article>
+
+          <article class="faction" style="--c:#2f9e5a" data-reveal data-tilt>
+            <div class="faction-emblem" aria-hidden="true">
+              <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="#f3e3c3" stroke="#0b1d33" stroke-width="4"/><path d="M50 18 L58 42 L84 42 L63 57 L71 82 L50 67 L29 82 L37 57 L16 42 L42 42Z" fill="#2f9e5a" stroke="#0b1d33" stroke-width="3"/></svg>
+            </div>
+            <h3>Révolutionnaires</h3>
+            <p class="faction-quote">« Le vent de la liberté souffle à l'aube. »</p>
+            <p>Agis dans l'ombre contre le Gouvernement Mondial. Infiltration, sabotage et libération des peuples opprimés.</p>
+            <ul><li>Réseau clandestin</li><li>Opérations secrètes</li><li>Recrutement sur invitation</li></ul>
+          </article>
+
+          <article class="faction" style="--c:#f2b33d" data-reveal data-tilt>
+            <div class="faction-emblem" aria-hidden="true">
+              <svg viewBox="0 0 100 100"><rect x="18" y="30" width="64" height="50" rx="8" fill="#f3e3c3" stroke="#0b1d33" stroke-width="4"/><path d="M36 30 V22 Q50 12 64 22 V30" fill="none" stroke="#0b1d33" stroke-width="4"/><text x="50" y="66" text-anchor="middle" font-family="Pirata One, serif" font-size="30" fill="#0b1d33">฿</text></svg>
+            </div>
+            <h3>Civils & Chasseurs</h3>
+            <p class="faction-quote">« Une prime, c'est une prime. »</p>
+            <p>Marchand, cuisinier, charpentier, médecin… ou chasseur de primes. Le cœur économique du serveur, c'est toi.</p>
+            <ul><li>Métiers & commerces</li><li>Contrats de chasse</li><li>Restaurants flottants</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POUVOIRS ============ -->
+    <section class="section night" id="pouvoirs" aria-labelledby="pouvoirs-title">
+      <div class="container">
+        <p class="kicker light" data-reveal>Chapitre 3 · Fruits du Démon & Haki</p>
+        <h2 id="pouvoirs-title" class="title light" data-reveal>Un pouvoir immense… <em>au prix de la mer.</em></h2>
+        <p class="lead light" data-reveal>Clique sur un fruit pour découvrir sa famille. Chaque fruit est <strong>unique</strong> sur le serveur : quand son utilisateur meurt définitivement, il réapparaît quelque part dans le monde.</p>
+
+        <div class="fruits" data-reveal-group>
+          <button class="fruit" style="--fc:#8e44ad" data-reveal aria-pressed="false">
+            <span class="fruit-inner">
+              <span class="fruit-front">
+                <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 22 C20 22 14 52 22 70 C30 88 70 88 78 70 C86 52 80 22 50 22Z" fill="var(--fc)" stroke="#0b1d33" stroke-width="4"/><path d="M30 44 q8 -8 16 0 t16 0 t12 0 M28 60 q8 -8 16 0 t16 0 t16 0" stroke="#0b1d33" stroke-width="3" fill="none"/><path d="M50 22 q-2 -10 6 -14" stroke="#0b1d33" stroke-width="4" fill="none"/><path d="M56 10 q12 -4 16 6 q-10 4 -16 -6Z" fill="#2f9e5a" stroke="#0b1d33" stroke-width="3"/></svg>
+                <b>Paramecia</b><small>Retourne-moi</small>
+              </span>
+              <span class="fruit-back">
+                <b>Paramecia</b>
+                <span>Modifie le corps ou l'environnement : élasticité, barrières, fils, bulles… La famille la plus variée.</span>
+                <em>22 fruits en jeu</em>
+              </span>
+            </span>
+          </button>
+
+          <button class="fruit" style="--fc:#e67e22" data-reveal aria-pressed="false">
+            <span class="fruit-inner">
+              <span class="fruit-front">
+                <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 22 C20 22 14 52 22 70 C30 88 70 88 78 70 C86 52 80 22 50 22Z" fill="var(--fc)" stroke="#0b1d33" stroke-width="4"/><path d="M34 40 q16 10 32 0 M30 56 q20 12 40 0 M36 72 q14 8 28 0" stroke="#0b1d33" stroke-width="3" fill="none"/><path d="M50 22 q-2 -10 6 -14" stroke="#0b1d33" stroke-width="4" fill="none"/><path d="M56 10 q12 -4 16 6 q-10 4 -16 -6Z" fill="#2f9e5a" stroke="#0b1d33" stroke-width="3"/></svg>
+                <b>Zoan</b><small>Retourne-moi</small>
+              </span>
+              <span class="fruit-back">
+                <b>Zoan</b>
+                <span>Transforme en animal, hybride ou créature mythique. Endurance et force physique décuplées.</span>
+                <em>16 fruits en jeu</em>
+              </span>
+            </span>
+          </button>
+
+          <button class="fruit" style="--fc:#e74c3c" data-reveal aria-pressed="false">
+            <span class="fruit-inner">
+              <span class="fruit-front">
+                <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 22 C20 22 14 52 22 70 C30 88 70 88 78 70 C86 52 80 22 50 22Z" fill="var(--fc)" stroke="#0b1d33" stroke-width="4"/><path d="M36 38 c6 -6 12 6 6 10 c-6 4 -12 -4 -6 -10Z M58 50 c6 -6 12 6 6 10 c-6 4 -12 -4 -6 -10Z M38 64 c6 -6 12 6 6 10 c-6 4 -12 -4 -6 -10Z" stroke="#0b1d33" stroke-width="3" fill="none"/><path d="M50 22 q-2 -10 6 -14" stroke="#0b1d33" stroke-width="4" fill="none"/><path d="M56 10 q12 -4 16 6 q-10 4 -16 -6Z" fill="#2f9e5a" stroke="#0b1d33" stroke-width="3"/></svg>
+                <b>Logia</b><small>Retourne-moi</small>
+              </span>
+              <span class="fruit-back">
+                <b>Logia</b>
+                <span>Devient un élément : feu, glace, foudre, fumée… Intangible face aux attaques sans Haki.</span>
+                <em>10 fruits en jeu</em>
+              </span>
+            </span>
+          </button>
+        </div>
+
+        <div class="haki" data-reveal-group>
+          <h3 class="haki-title" data-reveal>Les trois Haki</h3>
+          <div class="haki-list">
+            <div class="haki-item" data-reveal style="--h:#4fc3f7"><span class="haki-orb" aria-hidden="true"></span><b>Observation</b><p>Ressens la présence des autres et anticipe leurs mouvements.</p></div>
+            <div class="haki-item" data-reveal style="--h:#1b1b1b"><span class="haki-orb" aria-hidden="true"></span><b>Armement</b><p>Durcis ton corps comme l'acier et frappe les utilisateurs de Logia.</p></div>
+            <div class="haki-item" data-reveal style="--h:#c8102e"><span class="haki-orb" aria-hidden="true"></span><b>Rois</b><p>Un don sur un million. Fais plier la volonté de tes adversaires.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARTE ============ -->
+    <section class="section parchment" id="carte" aria-labelledby="carte-title">
+      <div class="container">
+        <p class="kicker" data-reveal>Chapitre 4 · La carte du monde</p>
+        <h2 id="carte-title" class="title" data-reveal>Hisse les voiles, <em>cap sur Grand Line.</em></h2>
+
+        <div class="map-wrap" data-reveal>
+          <div class="map">
+            <svg viewBox="0 0 1000 560" role="img" aria-label="Carte stylisée des mers du serveur Kaizen">
+              <defs>
+                <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#b89a6a" stroke-width="1" opacity=".5"/></pattern>
+                <radialGradient id="vign" cx=".5" cy=".5" r=".7"><stop offset=".6" stop-color="#e9d3a8" stop-opacity="0"/><stop offset="1" stop-color="#8a6a3a" stop-opacity=".55"/></radialGradient>
+              </defs>
+              <rect width="1000" height="560" fill="#ead7ae"/>
+              <rect width="1000" height="560" fill="url(#grid)"/>
+              <!-- Red Line -->
+              <rect x="470" y="0" width="60" height="560" fill="#c0623f" opacity=".85"/>
+              <text x="500" y="40" class="map-label" transform="rotate(90 500 40)">RED LINE</text>
+              <!-- Grand Line -->
+              <rect x="0" y="240" width="1000" height="80" fill="#5fa8c9" opacity=".35"/>
+              <rect x="0" y="210" width="1000" height="30" fill="#7c8b8f" opacity=".25"/>
+              <rect x="0" y="320" width="1000" height="30" fill="#7c8b8f" opacity=".25"/>
+              <text x="230" y="290" class="map-label">GRAND LINE</text>
+              <text x="760" y="290" class="map-label">NOUVEAU MONDE</text>
+              <text x="40" y="200" class="map-label sm">Calm Belt</text>
+              <text x="140" y="110" class="map-label">EAST BLUE</text>
+              <text x="140" y="470" class="map-label">SOUTH BLUE</text>
+              <text x="700" y="110" class="map-label">NORTH BLUE</text>
+              <text x="700" y="470" class="map-label">WEST BLUE</text>
+              <!-- route en pointillés -->
+              <path class="route" d="M120 150 C200 200 300 240 380 280 S470 280 500 280 S640 260 720 280 S880 300 930 280" fill="none" stroke="#c8102e" stroke-width="4" stroke-dasharray="10 10"/>
+              <!-- compas -->
+              <g transform="translate(900 470)" opacity=".85"><circle r="50" fill="none" stroke="#5b3a1e" stroke-width="3"/><path d="M0 -60 L8 0 L0 60 L-8 0Z" fill="#5b3a1e"/><path d="M-60 0 L0 8 L60 0 L0 -8Z" fill="#5b3a1e" opacity=".6"/><text y="-66" text-anchor="middle" class="map-label sm">N</text></g>
+              <rect width="1000" height="560" fill="url(#vign)"/>
+            </svg>
+
+            <!-- Îles cliquables -->
+            <button class="pin" style="left:12%;top:27%" data-island="0"><span class="sr-only">Village de Fushia</span></button>
+            <button class="pin" style="left:24%;top:38%" data-island="1"><span class="sr-only">Loguetown</span></button>
+            <button class="pin" style="left:47%;top:50%" data-island="2"><span class="sr-only">Reverse Mountain</span></button>
+            <button class="pin" style="left:32%;top:52%" data-island="3"><span class="sr-only">Alabasta</span></button>
+            <button class="pin" style="left:40%;top:44%" data-island="4"><span class="sr-only">Water Seven</span></button>
+            <button class="pin" style="left:54%;top:47%" data-island="5"><span class="sr-only">Marineford</span></button>
+            <button class="pin" style="left:68%;top:53%" data-island="6"><span class="sr-only">Archipel Sabaody</span></button>
+            <button class="pin" style="left:88%;top:47%" data-island="7"><span class="sr-only">Wano</span></button>
+          </div>
+
+          <aside class="island-card" aria-live="polite">
+            <p class="island-zone" id="island-zone">East Blue</p>
+            <h3 id="island-name">Village de Fushia</h3>
+            <p id="island-desc">Un petit port paisible où commence chaque légende. Zone de départ des nouveaux joueurs, idéale pour recruter ton premier équipage.</p>
+            <dl class="island-meta">
+              <div><dt>Danger</dt><dd id="island-danger">★☆☆☆☆</dd></div>
+              <div><dt>Contrôle</dt><dd id="island-ctrl">Neutre</dd></div>
+            </dl>
+            <p class="hint">Clique sur une île de la carte ⚓</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRIMES ============ -->
+    <section class="section wood" id="primes" aria-labelledby="primes-title">
+      <div class="container">
+        <p class="kicker light" data-reveal>Chapitre 5 · Avis de recherche</p>
+        <h2 id="primes-title" class="title light" data-reveal>Les têtes les plus <em>mises à prix.</em></h2>
+        <p class="lead light" data-reveal>Le classement est mis à jour chaque semaine par le Gouvernement Mondial. Les avis ci-dessous sont des exemples : ton visage pourrait bientôt y figurer.</p>
+
+        <div class="wanted-grid" data-reveal-group>
+          <article class="wanted" data-reveal>
+            <p class="w-head">WANTED</p>
+            <div class="w-photo" style="--sky:#f6b26b">
+              <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="40" r="20" fill="#3a2a1a"/><path d="M14 100 Q50 52 86 100Z" fill="#3a2a1a"/><path d="M26 34 Q50 6 74 34 Q50 26 26 34Z" fill="#c8102e"/></svg>
+            </div>
+            <p class="w-dead">DEAD OR ALIVE</p>
+            <h3 class="w-name">« Le Corbeau » Kaito</h3>
+            <p class="w-bounty"><span aria-hidden="true">฿</span><b data-count="845000000" data-format>0</b>-</p>
+            <p class="w-meta">Capitaine · Équipage des Vents Noirs</p>
+          </article>
+
+          <article class="wanted" data-reveal>
+            <p class="w-head">WANTED</p>
+            <div class="w-photo" style="--sky:#9fc5e8">
+              <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="40" r="20" fill="#3a2a1a"/><path d="M14 100 Q50 52 86 100Z" fill="#3a2a1a"/><path d="M30 30 L50 14 L70 30Z" fill="#f2b33d"/></svg>
+            </div>
+            <p class="w-dead">DEAD OR ALIVE</p>
+            <h3 class="w-name">« Lame d'Écume » Sora</h3>
+            <p class="w-bounty"><span aria-hidden="true">฿</span><b data-count="512000000" data-format>0</b>-</p>
+            <p class="w-meta">Bretteuse · Équipage des Vents Noirs</p>
+          </article>
+
+          <article class="wanted" data-reveal>
+            <p class="w-head">WANTED</p>
+            <div class="w-photo" style="--sky:#b6d7a8">
+              <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="40" r="20" fill="#3a2a1a"/><path d="M14 100 Q50 52 86 100Z" fill="#3a2a1a"/><rect x="30" y="20" width="40" height="8" rx="4" fill="#2f9e5a"/></svg>
+            </div>
+            <p class="w-dead">DEAD OR ALIVE</p>
+            <h3 class="w-name">« Main de Fer » Gorō</h3>
+            <p class="w-bounty"><span aria-hidden="true">฿</span><b data-count="320000000" data-format>0</b>-</p>
+            <p class="w-meta">Révolutionnaire · Commandant</p>
+          </article>
+
+          <article class="wanted" data-reveal>
+            <p class="w-head">WANTED</p>
+            <div class="w-photo" style="--sky:#d5a6bd">
+              <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="40" r="20" fill="#3a2a1a"/><path d="M14 100 Q50 52 86 100Z" fill="#3a2a1a"/><circle cx="50" cy="40" r="26" fill="none" stroke="#f3e3c3" stroke-width="3" stroke-dasharray="4 4"/></svg>
+            </div>
+            <p class="w-dead">DEAD OR ALIVE</p>
+            <h3 class="w-name">« La Sirène » Mira</h3>
+            <p class="w-bounty"><span aria-hidden="true">฿</span><b data-count="178000000" data-format>0</b>-</p>
+            <p class="w-meta">Navigatrice · Équipage du Lotus</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REJOINDRE ============ -->
+    <section class="section ocean" id="rejoindre" aria-labelledby="rejoindre-title">
+      <div class="container">
+        <p class="kicker light" data-reveal>Chapitre 6 · Embarquement</p>
+        <h2 id="rejoindre-title" class="title light" data-reveal>Rejoins l'équipage <em>en 4 étapes.</em></h2>
+
+        <ol class="steps" data-reveal-group>
+          <li class="step" data-reveal>
+            <span class="step-num">1</span>
+            <h3>Installe FiveM</h3>
+            <p>Télécharge le client officiel sur fivem.net et possède une copie légale de GTA V.</p>
+            <a class="link" href="https://fivem.net" target="_blank" rel="noopener">fivem.net ↗</a>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-num">2</span>
+            <h3>Rejoins le Discord</h3>
+            <p>C'est notre port d'attache : annonces, règlement, support et recrutements.</p>
+            <a class="link" href="#" data-discord>Ouvrir le Discord ↗</a>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-num">3</span>
+            <h3>Passe la whitelist</h3>
+            <p>Remplis ta candidature avec le background de ton personnage puis passe un court entretien vocal.</p>
+            <a class="link" href="#reglement">Lire le règlement ↓</a>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-num">4</span>
+            <h3>Prends la mer !</h3>
+            <p>Lance FiveM, appuie sur F8 et colle la commande ci-dessous. Bon vent, moussaillon !</p>
+            <button class="copy" type="button" data-copy>
+              <code id="connect-cmd">connect play.kaizen-rp.fr</code>
+              <span class="copy-label">Copier</span>
+            </button>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ REGLEMENT & FAQ ============ -->
+    <section class="section parchment" id="reglement" aria-labelledby="reglement-title">
+      <div class="container split">
+        <div>
+          <p class="kicker" data-reveal>Chapitre 7 · Le code des mers</p>
+          <h2 id="reglement-title" class="title" data-reveal>Le règlement <em>du bord.</em></h2>
+          <p class="lead" data-reveal>Même les pirates ont un code. Le règlement complet est disponible sur le Discord — voici l'essentiel.</p>
+          <div class="accordion" data-reveal>
+            <details open>
+              <summary>Respect avant tout</summary>
+              <p>Aucune insulte HRP, discrimination ou harcèlement. Ce qui se passe en RP reste en RP.</p>
+            </details>
+            <details>
+              <summary>Pas de Powergaming ni de Metagaming</summary>
+              <p>Tu ne peux pas utiliser des informations obtenues hors du jeu (stream, Discord) ni forcer une action irréaliste sur un autre joueur.</p>
+            </details>
+            <details>
+              <summary>Fear RP & valeur de la vie</summary>
+              <p>Ton personnage tient à la vie. Face à un Amiral ou un Empereur, on réfléchit avant de foncer… sauf si tu t'appelles Luffy.</p>
+            </details>
+            <details>
+              <summary>Utilisation des pouvoirs</summary>
+              <p>Les Fruits du Démon et le Haki sont encadrés : niveaux de maîtrise, temps de recharge et validation staff pour les combats majeurs.</p>
+            </details>
+            <details>
+              <summary>Mort RP définitive</summary>
+              <p>Une mort RP définitive (PK) ne peut avoir lieu qu'avec l'accord du staff et un contexte scénaristique solide.</p>
+            </details>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="faq-title" data-reveal>FAQ du moussaillon</h3>
+          <div class="accordion faq" data-reveal>
+            <details>
+              <summary>Le serveur est-il gratuit ?</summary>
+              <p>Oui, 100 % gratuit. Les éventuels avantages boutique sont uniquement cosmétiques.</p>
+            </details>
+            <details>
+              <summary>Comment obtenir un Fruit du Démon ?</summary>
+              <p>Les fruits apparaissent lors d'événements, de chasses au trésor ou se négocient en RP. Aucun fruit ne s'achète avec de l'argent réel.</p>
+            </details>
+            <details>
+              <summary>Puis-je jouer un personnage du manga ?</summary>
+              <p>Non : tu incarnes un personnage original. Les figures du canon peuvent apparaître lors d'events animés par le staff.</p>
+            </details>
+            <details>
+              <summary>Faut-il un micro ?</summary>
+              <p>Oui, un micro de qualité correcte est obligatoire pour garantir une bonne immersion.</p>
+            </details>
+            <details>
+              <summary>Quel âge minimum ?</summary>
+              <p>16 ans minimum, avec une maturité RP vérifiée lors de l'entretien de whitelist.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="final" aria-labelledby="final-title">
+      <div class="container">
+        <p class="final-quote" data-reveal>« Les rêves des hommes ne meurent jamais ! »</p>
+        <h2 id="final-title" class="final-title" data-reveal>Le One Piece existe.<br>À toi de le trouver.</h2>
+        <a class="btn btn-gold btn-lg" href="#rejoindre" data-magnetic data-don data-reveal>Hisser les voiles ⚓</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/img/logo.svg" alt="" width="40" height="40"><span>Kaizen<small>RP</small></span></a>
+        <p>Le premier serveur One Piece RolePlay sur FiveM. Écris ta légende sur les mers.</p>
+      </div>
+      <nav aria-label="Liens du pied de page">
+        <ul>
+          <li><a href="#monde">Le Monde</a></li>
+          <li><a href="#factions">Factions</a></li>
+          <li><a href="#pouvoirs">Pouvoirs</a></li>
+          <li><a href="#carte">Carte</a></li>
+          <li><a href="#reglement">Règlement</a></li>
+          <li><a href="#" data-discord>Discord</a></li>
+        </ul>
+      </nav>
+      <p class="disclaimer">
+        Projet de fans non officiel, sans lien avec Eiichirō Oda, Shūeisha, Toei Animation, Rockstar Games ni Cfx.re.
+        <i>One Piece</i> est une marque de ses ayants droit respectifs. © <span id="year">2026</span> Kaizen RP.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Indicateur de progression : Log Pose -->
+  <a class="scroll-pose" href="#top" aria-label="Revenir en haut">
+    <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="26" fill="#f3e3c3" stroke="#0b1d33" stroke-width="4"/><circle class="pose-ring" cx="30" cy="30" r="20" fill="none" stroke="#f2b33d" stroke-width="4" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 30 30)"/><g class="pose-needle"><path d="M30 12 L34 30 L30 48 L26 30Z" fill="#c8102e" stroke="#0b1d33" stroke-width="2"/></g><circle cx="30" cy="30" r="3" fill="#0b1d33"/></svg>
+  </a>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
