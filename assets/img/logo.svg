@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pavillon Kaizen">
+  <!-- Pavillon original du serveur : crâne au bandana, sabres croisés -->
+  <defs>
+    <linearGradient id="band" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e2343f"/>
+      <stop offset="1" stop-color="#a50e1c"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#0b1d33" stroke-width="6" stroke-linecap="round">
+    <line x1="30" y1="40" x2="170" y2="170" stroke="#f3e3c3" stroke-width="10"/>
+    <line x1="170" y1="40" x2="30" y2="170" stroke="#f3e3c3" stroke-width="10"/>
+  </g>
+  <g fill="#f2b33d" stroke="#0b1d33" stroke-width="4">
+    <rect x="18" y="28" width="26" height="12" rx="3" transform="rotate(43 31 34)"/>
+    <rect x="156" y="28" width="26" height="12" rx="3" transform="rotate(-43 169 34)"/>
+  </g>
+  <path d="M100 38c-34 0-56 22-56 52 0 18 9 30 20 37v18c0 6 5 10 10 10h52c5 0 10-4 10-10v-18c11-7 20-19 20-37 0-30-22-52-56-52z" fill="#f3e3c3" stroke="#0b1d33" stroke-width="5"/>
+  <path d="M46 78c8-26 30-40 54-40s46 14 54 40c-18-8-36-11-54-11s-36 3-54 11z" fill="url(#band)" stroke="#0b1d33" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M152 74l22-6-8 16 12 10-24-4z" fill="url(#band)" stroke="#0b1d33" stroke-width="4" stroke-linejoin="round"/>
+  <ellipse cx="80" cy="100" rx="13" ry="15" fill="#0b1d33"/>
+  <ellipse cx="120" cy="100" rx="13" ry="15" fill="#0b1d33"/>
+  <path d="M100 112l-8 14h16z" fill="#0b1d33"/>
+  <g stroke="#0b1d33" stroke-width="4" stroke-linecap="round">
+    <line x1="84" y1="140" x2="84" y2="152"/>
+    <line x1="100" y1="140" x2="100" y2="153"/>
+    <line x1="116" y1="140" x2="116" y2="152"/>
+  </g>
+</svg>
